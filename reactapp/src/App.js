@@ -1,36 +1,28 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-import Customer from './components/Customer';
+import Cards from './components/cards/Cards';
+import Navbar from './components/navbar/Navbar';
+import { BrowserRouter, Switch, Route} from 'react-router-dom';
+
+
+// Routes
+import Products from './views/Products';
+import Home from './views/Home';
+import NotFound from './views/NotFound';
 
 
 function App() {
-
-  const [customer, setCustomers] = useState([])
-  useEffect(() => {
-
-    async function fetchData() {
-      const res = await fetch("https://ecexam-webapi.azurewebsites.net/api/customers")
-      setCustomers(await res.json())
-    }
-    fetchData()
-  }, [])
-    
-
-
   return (
-      <div className="container mt-5">
-        <div className="row row-cols-1 row-cols-md-3 g-4">
-          
-          {
-            customer.map(customer => (
-              <div key={customer.id} className="col">
-                 <Customer item={customer} />
-              </div>
-            ))
-          }
-      </div>
-    </div>
+      <BrowserRouter>
+        <Switch>
+            <Route path="/products" exact component={Products} />
+            <Route path="/" exact component={Home}/>
+            <Route path="*" exact component={NotFound}/>
+        </Switch>
+      </BrowserRouter>
+
   );
 }
+
 
 export default App;

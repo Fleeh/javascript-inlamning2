@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-const Customer = ({item}) => {
+
+
+const Cards = ({item}) => {
     return (
         <div className="card shadow" style={{maxWidth: 450 + 'px'}}>
             <div className="row g-0">
@@ -19,8 +21,4 @@ const Customer = ({item}) => {
     )
 }
 
-export default Customer
-
-
-
-
+export default Cards
