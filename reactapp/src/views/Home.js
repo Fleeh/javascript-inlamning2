@@ -3,10 +3,13 @@ import Navbar from '../components/navbar/Navbar';
 
 const Home = () => {
     return (
-        <div>
-            <Navbar />
-            Home
-        </div>
+        <>
+                <Navbar />
+                <div className="container mt-5">
+                    Home
+                </div>
+        </>
+        
     )
 }
 
