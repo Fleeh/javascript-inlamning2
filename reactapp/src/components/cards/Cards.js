@@ -6,7 +6,7 @@ const Cards = ({item}) => {
         <div className="card shadow" style={{maxWidth: 450 + 'px'}}>
             <div className="row g-0">
                 <div className="col-md-2">
-                <img src="https://images.pexels.com/photos/2115695/pexels-photo-2115695.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" className="img-fluid rounded-start" alt="..." />
+                <img src="https://images.pexels.com/photos/3894157/pexels-photo-3894157.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" className="img-fluid rounded-start" alt="..." />
                 </div>
                 <div className="col-md-10">
                 <div className="card-body">
