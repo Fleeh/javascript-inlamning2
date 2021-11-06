@@ -40,6 +40,16 @@ html, body{
  TEST TESTTEST TESTTEST TESTTEST TESTTEST TESTTEST TESTTEST TESTTEST TESTTEST TESTTEST TESTTEST TESTTEST TEST
 
  */
+
+
+#regform {
+    width: 400px;
+    max-width: 100%;
+    overflow:hidden;
+    margin-top: 50px;
+}
+
+
 .header {
     padding: 20px 40px;
     
@@ -53,9 +63,6 @@ html, body{
     justify-content: center;
 }
 
-.form {
-    padding: 30px 40px;
-}
 
 .form-control {
     margin-bottom: 10px;
@@ -64,68 +71,17 @@ html, body{
     border:hidden;
 }
 
-.form-control label {
-    display: inline-block;
-    margin-bottom: 5px;
-    font-size: 14px;
-}
 
-.form-control input {
-    border: 2px solid #bdbdbd;
-    border-radius: 4px;
-    display: block;
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    font-family: 'Poppins', sans-serif;
-}
 
-.form-control.success input {
-    border-color: #2ecc71;
-}
-
-.form-control.error input {
-    border-color: #e74c3c;
-}
-
-.form-control.success i.fa-check-circle {
-    visibility: visible;
-    color: #2ecc71;
-}
-
-.form-control.error i.fa-exclamation-circle {
-    visibility: visible;
-    color: #e74c3c;
-}
-
-.form-control i {
-    position: absolute;
-    top: 50px;
-    right: 25px;
-    visibility: hidden;
-}
-
-.form-control small {
-    font-size: 14px;
-    visibility: hidden;
-    position: absolute;
-    bottom:0;
-    left:0;
-}
-
-.form-control.error small {
-    visibility: visible;
-    color: #e74c3c;
-    padding-left: 15px;
-}
-.form button {
-    background-color:#528ec7;
-    border: 2px solid #528ec7;
+.btn {
+    background-color:#bfbfbf;
+    border: 2px solid #919191;
     border-radius: 4px;
     color: #fff;
     font-family: inherit;
     padding: 10px;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 

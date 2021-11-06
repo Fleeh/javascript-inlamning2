@@ -1,90 +1,55 @@
 import React from 'react'
 import Navbar from '../components/navbar/Navbar';
 import Linkme from '../components/link/Linkme';
+import Products from './Products';
 
 
-const Products = () => {
+const Signup = () => {
     return (
-        <>
-                <Navbar />
-                <div className="container mt-5">
-                    <Linkme />
-                    <div className="container">
-     <div className="header">
-        <h2>Create Account</h2>
-    </div>
-    <form className="form" id="form" novalidate>
-        <div className="form-control">
-            <label>Förnamn</label>
-            <input type="text" placeholder="Rasmus" id="username" />
-            <i className="fas fa-check-circle"></i>
-            <i className="fas fa-exclamation-circle"></i>
-            <small>Error Message</small>
-        </div>
+    <>
+        <Navbar />
+        <div className="container mt-5">
+            <Linkme />
+            <form id="regForm" novalidate>
+            <input id="firstName" type="text" className="form-control" placeholder="Förnamn" />
+            <div id="error-firstName" className="text-danger mb-3 ms-2"></div>
+            <small></small>
 
-        <div className="form-control">
-            <label>Efternamn</label>
-            <input type="text" placeholder="Henriksson" id="lastname" />
-            <i className="fas fa-check-circle"></i>
-            <i className="fas fa-exclamation-circle"></i>
-            <small>Error Message</small>
-        </div>
+            <input id="lastName" type="text" className="form-control" placeholder="Efternamn" />
+            <div id="error-lastName" className="text-danger mb-3 ms-2"></div>
+            <small></small>
 
-        <div className="form-control">
-            <label>E-postadress</label>
-            <input type="email" placeholder="turboralle@hotmail.com" id="email" />
-            <i className="fas fa-check-circle"></i>
-            <i className="fas fa-exclamation-circle"></i>
-            <small>Error Message</small>
-        </div>
+            <input id="email" type="email" className="form-control" placeholder="E-postadress" />
+            <div id="error-email" className="text-danger mb-3 ms-2"></div>
+            <small></small>
 
-        <div className="form-control">
-            <label>Adress</label>
-            <input type="text" placeholder="Svanåallén 2" id="adress" />
-            <i className="fas fa-check-circle"></i>
-            <i className="fas fa-exclamation-circle"></i>
-            <small>Error Message</small>
-        </div>
+            <input id="password" type="password" className="form-control" placeholder="Password" />
+            <div id="error-password" className="text-danger mb-3 ms-2"></div>
+            <small></small>
 
-        <div className="form-control">
-            <label>Postnummer</label>
-            <input type="number" placeholder="70232" id="zipcode" />
-            <i className="fas fa-check-circle"></i>
-            <i className="fas fa-exclamation-circle"></i>
-            <small>Error Message</small>
-        </div>
+            <input id="confirm-password" type="password" className="form-control" placeholder="Confirm Password" />
+            <div id="error-confirm-password" className="text-danger mb-3 ms-2"></div>
+            <small></small>
 
-        <div className="form-control">
-            <label>Födelsedatum</label>
-            <input type="date" placeholder="1995-03-03" id="birth" />
-            <i className="fas fa-check-circle"></i>
-            <i className="fas fa-exclamation-circle"></i>
-            <small>Error Message</small>
-        </div>
+            <input id="birth" type="date" className="form-control" placeholder="Födelsedatum" />
+            <div id="error-birth" className="text-danger mb-3 ms-2"></div>
+            <small></small>
 
-        <div className="form-control">
-            <label>Lösenord</label>
-            <input type="password" placeholder="lol123" id="password" />
-            <i className="fas fa-check-circle"></i>
-            <i className="fas fa-exclamation-circle"></i>
-            <small>Error Message</small>
-        </div>
+            <input id="adress" type="text" className="form-control" placeholder="Adress" />
+            <div id="error-adress" className="text-danger mb-3 ms-2"></div>
+          <small></small>
 
-        <div className="form-control">
-            <label>Bekräfta Lösenord</label>
-            <input type="password" placeholder="lol123" id="password2" />
-            <i className="fas fa-check-circle"></i>
-            <i className="fas fa-exclamation-circle"></i>
-            <small>Error Message</small>
-        </div>
+          <input id="zipcode" type="number" className="form-control" placeholder="Postnummer" />
+            <div id="error-zipcode" className="text-danger mb-3 ms-2"></div>
+            <small></small>
 
-       <button>Lämna in</button>
-    </form>
-</div>
-                </div>
-        </>
+            <button className="btn btn-success" type="submit"> Skicka </button>
+            </form>
+            
+        </div>
+    </>
         
     )
 }
 
-export default Products
+export default Signup

@@ -3,7 +3,7 @@ import Link from './Link'
 
 const Linkme = () => {
 
-    const [signup,] = useState([])
+    const [signup] = useState([])
 
     
 
