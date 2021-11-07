@@ -5,10 +5,16 @@ const Cardgrid = () => {
 
     const [products, setProducts] = useState([])
 
-    useEffect(async () => {
-       const res = await fetch("https://ecexam-webapi.azurewebsites.net/api/customers")
-       setProducts(await res.json())
-    })
+    useEffect(() => {
+       async function fetchData() {
+        const res = await fetch("https://ecexam-webapi.azurewebsites.net/api/customers")
+        const data = await res.json()
+       
+    
+       setProducts(data)
+    }
+    fetchData();
+    },[])
 
     return (
 

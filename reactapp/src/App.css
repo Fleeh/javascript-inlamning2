@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@500&display=swap');
 
+
 html, body{
    background-color: #e2efff;
 }
@@ -35,19 +36,9 @@ html, body{
     font-size: 25px;
 }
 
- /* 
-
- TEST TESTTEST TESTTEST TESTTEST TESTTEST TESTTEST TESTTEST TESTTEST TESTTEST TESTTEST TESTTEST TESTTEST TEST
-
- */
 
 
-#regform {
-    width: 400px;
-    max-width: 100%;
-    overflow:hidden;
-    margin-top: 50px;
-}
+
 
 
 .header {
@@ -63,15 +54,10 @@ html, body{
     justify-content: center;
 }
 
-
-.form-control {
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-    position: relative;
-    border:hidden;
+#regForm {
+padding: 30px 40px;
+    
 }
-
-
 
 .btn {
     background-color:#bfbfbf;
